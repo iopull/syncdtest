@@ -15,12 +15,12 @@ func main() {
 
 	//
 	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
+	r.GET("/syncd/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "pong",
 		})
 	})
-	r.GET("/me", func(c *gin.Context) {
+	r.GET("/syncd/me", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"branch": "buga",
 		})
