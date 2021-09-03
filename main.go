@@ -20,6 +20,11 @@ func main() {
 			"message": "pong",
 		})
 	})
+	r.GET("/me", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"branch": "buga",
+		})
+	})
 	r.Run("0.0.0.0:9080") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 
 }
