@@ -22,7 +22,7 @@ func main() {
 	})
 	r.GET("/syncd/me", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"branch": "supervisor 100",
+			"branch": "supervisor 200",
 			"time":time.Now().Format("2006-01-02 15:04:05"),
 		})
 	})
