@@ -11,6 +11,8 @@ import (
 	"time"
 )
 
+var port  = ":9080"
+
 func main() {
 
 	fmt.Println("start ...")
@@ -32,7 +34,7 @@ func main() {
 		})
 	})
 	srv := &http.Server{
-		Addr:    ":9080",
+		Addr:    port,
 		Handler: router,
 	}
 
