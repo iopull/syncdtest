@@ -29,7 +29,7 @@ func main() {
 	})
 	router.GET("/syncd/me", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"branch": "古董 500",
+			"branch": "hello 500",
 			"time":time.Now().Format("2006-01-02 15:04:05"),
 		})
 	})
